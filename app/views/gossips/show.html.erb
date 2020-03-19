@@ -1,0 +1,11 @@
+<div class="container">
+</br></br></br><h2 class="text-primary">Vous êtes sur la gage de potin n°<%=@gossip.id %></h2> 
+
+<%= link_to "Edit", edit_gossip_path(@gossip.id), class: 'btn btn-primary'%>
+<%= link_to "Clique pour détruire", @gossip, method: :delete, class: 'btn btn-danger'%>
+
+<h4 class="pad">Createur du potin => <%= @gossip.user_id %></h4>
+
+<p>Titre => <%= @gossip.title %></p>
+<p>ontent => <%= @gossip.content %></p>
+</div>
